@@ -5,23 +5,58 @@
 //Project1
 //Story with JS
 
-//global variables
+//start
 
-var strAid = "$14,250";
-var strAdvisor = "Advisor \"Galloway\"";
-var strTuition = "$14,250";
-var shortTuition = "$24,978";
-var intOutOfPocket = 360;
-var intSchPayment = 90;
-var intTuitionLeft = 5000;
-var booMobileStudio = true;
-var mypromt;
+//global variables(string, string w/escapes, number, boolean)
+
+var intPets = 3;
+var strLivQtr = "house";
+var booSpoiled = true;
+var strEsc = "\'Princess\' Isabella";
+
+var myArray = new Array (3);
+myArray[0] = "Ferret named Stewie,";
+myArray[1] = "Teacup Chihuahua named Isabella,";
+myArray[2] = "Grey Tabby named Gracie";
+
+var myFirstPrompt;
+var mySecondPrompt;
+var myThirdPrompt;
+
+var intFarAlong = 4;
+var intTooGoThree = 8;
 
 
 //my outputs
 
-console.log("Today my Financial Aid " + strAdvisor + " sent me an email saying that I was $" + intOutOfPocket + " short on this ACYR.");
-console.log(strAdvisor + " states that I will need too make four payments of $" + intSchPayment + " each.");
-console.log("She also stated that I would only have $" + intTuitionLeft + " left of Financial Aid money starting the next ACYR.");
+console.log("I have " + intPets + " pets and it is " + booSpoiled + " that they are spoiled.");
 
-myprompt = prompt("Isn't it true that I will have a complete mobile studio too learn too program for either Apple or Android?");
+console.log("My pets are a " + myArray[0] + myArray[1] + myArray[2] + ".");
+
+console.log("All " + intPets + " of my pets live in the " + strLivQtr + " with me.");
+
+console.log("Of course, only one considers herself royalty and that is " + strEsc + ".");
+
+//prompt for input
+
+myFirstPrompt = confirm("Have you ever seen a ferret before?");
+
+//boolean conditional
+
+if (myFirstPrompt === true) {
+    console.log("Than I am sure you know that they are very playful and rambunctious.");
+
+//if true-->prompt-->number conditional-->(if false-->math conditional-->outputA)-->(if  true-->outputB)
+    
+} else {
+    console.log("Just in case you did not know- they are like a perpetual two year old");
+     
+//if false-->prompt-->string conditonal-->(if true--> outputC)-->(if false--> string concatenation-->outputD)
+
+}
+
+
+
+//if false-->prompt-->string conditonal-->(if true--> outputC)-->(if false--> string concatenation-->outputD)
+
+//finish
