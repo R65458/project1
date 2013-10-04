@@ -1,62 +1,60 @@
 //alert("JavaScript works!");
-
-//Stacy A. Purdee
 //SDI 1310
 //Project1
 //Story with JS
 
 //start
 
-//global variables(string, string w/escapes, number, boolean)
+//global variables(string w/escapes, string, number, boolean)
+var strEscMySchool = "\'Full Sail University\'";
+var strOpinion = "Awesome";
+var intAcYr = 8;
+var booEnoughFinAid = false;
+var intProgLength = 32;
+var intFinished = 16;
+var intTimeRemaining;
+var strOnlineResources = "Scholarships.com";
 
-var intPets = 3;
-var strLivQtr = "house";
-var booSpoiled = true;
-var strEsc = "\'Princess\' Isabella";
+var firstPrompt;
+var secondPrompt;
+var thirdPrompt;
 
-var myArray = new Array (3);
-myArray[0] = "Ferret named Stewie,";
-myArray[1] = "Teacup Chihuahua named Isabella,";
-myArray[2] = "Grey Tabby named Gracie";
-
-var myFirstPrompt;
-var mySecondPrompt;
-var myThirdPrompt;
-
-var intFarAlong = 4;
-var intTooGoThree = 8;
-
-
-//my outputs
-
-console.log("I have " + intPets + " pets and it is " + booSpoiled + " that they are spoiled.");
-
-console.log("My pets are a " + myArray[0] + myArray[1] + myArray[2] + ".");
-
-console.log("All " + intPets + " of my pets live in the " + strLivQtr + " with me.");
-
-console.log("Of course, only one considers herself royalty and that is " + strEsc + ".");
+//My outputs
+console.log("I love going too " + strEscMySchool + " .");
+console.log("This school is really " + strOpinion + " !");
+console.log("So far having enough Financial Aid is " + booEnoughFinAid + " .");
+console.log("I know that I have this academic year covered though and I think it is " + intAcYr + " months long.");
 
 //prompt for input
-
-myFirstPrompt = confirm("Have you ever seen a ferret before?");
+myFirstPrompt = confirm("Does the Financial Advisors have information on scholarships and private loans?");
 
 //boolean conditional
-
-if (myFirstPrompt === true) {
-    console.log("Than I am sure you know that they are very playful and rambunctious.");
-
 //if true-->prompt-->number conditional-->(if false-->math conditional-->outputA)-->(if  true-->outputB)
-    
-} else {
-    console.log("Just in case you did not know- they are like a perpetual two year old");
-     
+if (myFirstPrompt === true) {
+
+mySecondPrompt = prompt("I really need too figure out how I am going too finance the rest of school or if I will be able too continue next year? How many months is the program?");
+            
+            if (mySecondPrompt <= 16) {
+                console.log("I will have completed the program.");
+            } else {
+                intTimeRemaining = (intProgLength - intFinished);
+                console.log("I will have " + intTimeRemaining + " months left in the program too go.");
+            }
 //if false-->prompt-->string conditonal-->(if true--> outputC)-->(if false--> string concatenation-->outputD)
+} else {
+
+myThirdPrompt = confirm("Are there resources online that I can look for?");
+
+            if (myThirdPrompt === true){
+                console.log("Than I will look online.");
+            
+            } else {
+                console.log("I will look at " + strOnlineResources + " too see if they have anything.");
+}
 
 }
 
-
-
-//if false-->prompt-->string conditonal-->(if true--> outputC)-->(if false--> string concatenation-->outputD)
-
 //finish
+
+
+
